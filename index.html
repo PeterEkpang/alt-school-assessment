@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          screens: {
+            sm: "640px",
+            md: "768px",
+            lg: "1024px",
+            xl: "1280px",
+            "2xl": "1536px",
+          },
+          extend: {
+            colors: {
+              "custom-green": "#9CC741",
+              "custom-blue": "#005AE2",
+              "custom-white": "#FFFFFF",
+              "custom-dark-blue": "#1E3448",
+              "custom-btn-blue": "#0065FE",
+              "custom-black": "#000000",
+              "custom-milky": "#F9FBFD",
+              "custom-gray": "#D6D6D6",
+            },
+          },
+        },
+        variants: {},
+        plugins: [],
+      };
+    </script>
+  </head>
+  <body class="web">
+    <main class="main-web">
+      <!-- NAV SECTION -->
+      <nav
+        class="flex w-full md:mx-0 items-align justify-around pt-4 pb-2 fixed top-0 bg-custom-white z-50"
+        id="navbar"
+      >
+        <div>
+          <a href="#"
+            ><img src="./Assets/logo.png" alt="scissors" class="w-24"
+          /></a>
+        </div>
+        <div class="hidden md:flex justify-between font-semibold w-96">
+          <a href="#" class="text-custom-blue">My URLs</a>
+          <a href="#features" class="flex"
+            ><p>Features</p>
+            <img src="./Assets/chevron-down.png" alt="dropdown" class="mb-3" />
+          </a>
+          <a href="#pricing">Pricing</a>
+          <a href="#analytics">Analytics</a>
+          <a href="#faqs">FAQs</a>
+        </div>
+        <div class="flex font-semibold">
+          <button class="mr-8 text-custom-blue">Log in</button>
+          <button
+            class="text-custom-white bg-custom-blue py-2 px-4 rounded-full"
+          >
+            Try for free
+          </button>
+        </div>
+      </nav>
+
+      <!-- INTRO SECTION -->
+      <div class="mt-28">
+        <p class="font-bold text-4xl">
+          Optimize Your Online Experience with Our <br />
+        </p>
+        <p class="font-bold text-4xl my-4">
+          Advanced <span class="text-custom-blue">URL Shortening</span> Solution
+        </p>
+        <img src="./Assets/textline.png" alt="slash" class="m-auto my-4" />
+        <p class="px-4">
+          Personalize your shortened URLs to align with your brand identity.
+          Utilize custom slugs,<br />
+          branded links, and domain customization options to reinforce your
+          brand presence and <br />
+          enhance user engagement.
+        </p>
+        <div class="my-4 font-semibold">
+          <button
+            class="mx-2 text-custom-white bg-custom-blue rounded-full py-2 px-4"
+          >
+            Sign Up
+          </button>
+          <button class="mx-2 text-custom-blue">Learn more</button>
+        </div>
+        <div class="my-10 flex items-align justify-center">
+          <div class="mx-4">
+            <img
+              src="./Assets/tri.png"
+              alt="oval"
+              class="hidden md:block md:absolute ml-1"
+            />
+            <img
+              src="./Assets/seamless.png"
+              alt="seamless"
+              class="md:relative"
+            />
+          </div>
+        </div>
+        <div class="mt-20" id="analytics">
+          <img src="./Assets/group.png" alt="group" />
+        </div>
+      </div>
+
+      <!-- ANALYTICS SECTION -->
+      <div class="bg-custom-milky w-full mb-10 py-8">
+        <div
+          class="flex mx-8 justify-between md:justify-around items-align text-left md:mx-28"
+        >
+          <div
+            class="w-1/4 mx-4 font-semibold text-sx md:mx-2 md:w-3/4 md:font-bold md:text-2xl"
+          >
+            <p>
+              One Stop. <br />Four
+              <span class="text-custom-blue">Possibilities</span>.
+            </p>
+          </div>
+          <div class="mx-2 w-1/4">
+            <span class="font-semibold text-xl">3M</span
+            ><span class="block">Active users</span>
+          </div>
+          <div class="mx-2 w-1/4">
+            <span class="font-semibold text-xl">60M</span
+            ><span class="block">Links & QR codes created</span>
+          </div>
+          <div class="mx-2 w-1/4">
+            <span class="font-semibold text-xl">1B</span
+            ><span class="block">Clicked & Scanned connections</span>
+          </div>
+          <div class="mx-2 w-1/4" id="features">
+            <span class="font-semibold text-xl">600k</span
+            ><span class="block">App integrations</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-full py-8">
+        <div
+          class="block ml-20 md:flex justify-around items-align text-left md:mx-28"
+        >
+          <div class="w-3/4 mx-2">
+            <div class="font-bold text-2xl flex mb-4">
+              <img src="./Assets/Line.png" alt="line" class="h-10 mr-2" />
+              <p>Why choose <span class="text-custom-blue">scissors</span></p>
+            </div>
+            <p>
+              Scissors is the hub of everything that has to do <br />
+              with your link management. We shorten your URLs, <br />
+              allow you creating custom ones for your personal, <br />
+              business, event usage. Our swift QR code <br />
+              creation, management and usage tracking with <br />
+              advance analytics for all of these is second to none.
+            </p>
+          </div>
+          <div class="mx-2 w-2/4">
+            <img src="./Assets/url.png" alt="url" class="my-8 md:my-0" />
+            <p class="font-semibold text-xl my-2">URL Shortening</p>
+            <p>
+              Scissor allows you to shorten URLs of your business, events.
+              Shorten your URL at scale, URL redirects.
+            </p>
+          </div>
+          <div class="mx-2 w-2/4">
+            <img
+              src="./Assets/customize.png"
+              alt="customize"
+              class="my-8 md:my-0"
+            />
+            <p class="font-semibold text-xl my-2">Custom URLs</p>
+            <p>
+              With Scissor, you can create custom URLs, with the length you
+              want! A solution for socials and businesses.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-full mb-10 py-8">
+        <div
+          class="block ml-20 md:flex justify-around items-align text-left md:mx-28"
+        >
+          <div class="mx-2 w-3/4"></div>
+          <div class="mx-2 w-2/4">
+            <img src="./Assets/qr.png" alt="qr" class="my-8 md:my-0" />
+            <p class="font-semibold text-xl my-2">QR Codes</p>
+            <p>
+              Generate QR codes to your business, events. Bring your audience
+              and customers to your doorstep with this scan and go solution.
+            </p>
+          </div>
+          <div class="mx-2 w-2/4" id="pricing">
+            <img src="./Assets/data.png" alt="data" class="my-8 md:my-0" />
+            <p class="font-semibold text-xl my-2">Data Analytics</p>
+            <p>
+              Receive data on the usage of either your shortened URL, custom
+              URLs or generated QR codes. Embedded to monitor progress.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- PRICING SECTION -->
+      <div>
+        <div class="flex items-align">
+          <div class="font-bold text-2xl flex m-auto">
+            <img src="./Assets/Line.png" alt="line" class="h-8 mr-2" />
+            <p class="mb-2">
+              A <span class="text-custom-blue">price perfect</span> for your
+              needs
+            </p>
+          </div>
+        </div>
+        <p class="mx-4 md:mx-0">
+          From catering for your personal, business, event, socials needs, you
+          can be <br />
+          rest assured we have you in mind in our pricing.
+        </p>
+
+        <div class="my-10 text-left">
+          <div class="mx-8 md:mx-0 md:grid grid-cols-3 gap-2">
+            <div
+              class="my-8 md:my-0 border border-custom-blue rounded-md border-1 py-4 px-8 transition-all duration-300 md:hover:scale-125 hover:cursor-pointer hover:bg-custom-dark-blue hover:border-none hover:text-custom-white"
+            >
+              <p class="text-xl">Basic</p>
+              <p class="font-bold text-2xl mt-2">Free</p>
+              <p class="text-xl">Free plan for all users</p>
+              <p class="my-2">
+                <span class="font-semibold mr-2">⊚</span>Unlimited URL
+                Shortening
+              </p>
+              <p class="my-2">
+                <span class="font-semibold mr-2">⊚</span>Basic Link Analytics
+              </p>
+              <p class="my-2">
+                <span class="font-semibold mr-2">⊚</span>Customizable Short
+                Links
+              </p>
+              <p class="my-2">
+                <span class="font-semibold mr-2">⊚</span>Standard Support
+              </p>
+              <p class="my-2">
+                <span class="font-semibold mr-2">⊚</span>Ad-supported
+              </p>
+            </div>
+            <div
+              class="my-8 md:my-0 border border-custom-blue rounded-md border-1 py-4 px-8 transition-all duration-300 md:hover:scale-125 hover:cursor-pointer hover:bg-custom-dark-blue hover:border-none hover:text-custom-white"
+            >
+              <p class="text-xl">Professional</p>
+              <p class="font-bold text-2xl mt-2">$15/month</p>
+              <p class="text-xl">Ideal for business creators</p>
+              <p class="my-2">
+                <span class="font-semibold mr-2">⊚</span>Enhanced Link Analytics
+              </p>
+              <p class="my-2">
+                <span class="font-semibold mr-2">⊚</span>Custom Branded Domains
+              </p>
+              <p class="my-2">
+                <span class="font-semibold mr-2">⊚</span>Advanced Link
+                Customization
+              </p>
+              <p class="my-2">
+                <span class="font-semibold mr-2">⊚</span>Priority Support
+              </p>
+              <p class="my-2">
+                <span class="font-semibold mr-2">⊚</span>Ad-free Experience
+              </p>
+            </div>
+            <div
+              class="my-8 md:my-0 border border-custom-blue rounded-md border-1 py-4 px-8 transition-all duration-300 md:hover:scale-125 hover:cursor-pointer hover:bg-custom-dark-blue hover:border-none hover:text-custom-white"
+            >
+              <p class="text-xl">Teams</p>
+              <p class="font-bold text-2xl mt-2">$25/month</p>
+              <p class="text-xl">Share with up to 10 users</p>
+              <p class="my-2">
+                <span class="font-semibold mr-2">⊚</span>Team Collaboration
+              </p>
+              <p class="my-2">
+                <span class="font-semibold mr-2">⊚</span>User Roles and
+                Permissions
+              </p>
+              <p class="my-2">
+                <span class="font-semibold mr-2">⊚</span>Enhanced Security
+              </p>
+              <p class="my-2">
+                <span class="font-semibold mr-2">⊚</span>API Access
+              </p>
+              <p class="my-2">
+                <span class="font-semibold mr-2">⊚</span>Dedicated Account
+                Manager
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- INPUT SECTION -->
+      <div class="w-full flex items-align">
+        <div class="bg-cover bg-[url('./Assets/backG.jpg')] w-full">
+          <div class="bg-custom-white md:w-96 w-64 my-10 m-auto rounded-md p-8">
+            <input
+              type="text"
+              placeholder="Paste URL here..."
+              class="border outline-none pl-2 w-full border-custom-blue rounded-md border-1 py-4 placeholder:text-custom-blue"
+            />
+            <div class="flex justify-between mt-4">
+              <select
+                class="border outline-none pl-2 w-full mr-2 text-custom-blue border-custom-blue rounded-md border-1 py-4"
+              >
+                <option value="" disabled selected>Select an option</option>
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
+              </select>
+              <input
+                type="text"
+                placeholder="Type Alias here"
+                class="border ml-2 outline-none pl-2 w-full border-custom-blue rounded-md border-1 py-4 placeholder:text-custom-blue"
+              />
+            </div>
+            <button
+              class="outline-none w-full rounded-full my-4 py-4 text-custom-white bg-custom-blue flex items-align justify-center"
+            >
+              <span>Trim URL</span>
+              <img src="./Assets/magic wand.png" alt="wand" />
+            </button>
+            <p class="text-custom-blue text-left" id="faqs">
+              By clicking TrimURL, I agree to the
+              <span class="font-semibold"
+                >Terms of Service, Privacy Policy</span
+              >
+              and Use of Cookies.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQs SECTION -->
+      <div class="my-20 text-left">
+        <div class="mx-10 md:mx-4">
+          <div class="flex items-align">
+            <div class="font-bold text-2xl flex m-auto mb-4">
+              <img src="./Assets/Line.png" alt="line" class="h-8 mr-2" />
+              <p class="mb-2">FAQs</p>
+            </div>
+          </div>
+          <div>
+            <div class="border-b border-custom-gray pb-4">
+              <div class="flex items-align justify-between">
+                <p>How does URL shortening work?</p>
+                <p class="text-2xl font-semibold">-</p>
+              </div>
+              <p class="text-left">
+                URL shortening works by taking a long URL and creating a
+                shorter, condensed version that redirects to the <br />
+                original URL. When a user clicks on the shortened link, they are
+                redirected to the intended destination.
+              </p>
+            </div>
+            <div
+              class="flex items-align justify-between border-b border-custom-gray pb-2 my-8"
+            >
+              <p>
+                Is it necessary to create an account to use the URL shortening
+                service?
+              </p>
+              <p class="text-2xl font-semibold">+</p>
+            </div>
+            <div
+              class="flex items-align justify-between border-b border-custom-gray pb-2 my-8"
+            >
+              <p>Are the shortened links permanent? Will they expire?</p>
+              <p class="text-2xl font-semibold">+</p>
+            </div>
+            <div
+              class="flex items-align justify-between border-b border-custom-gray pb-2 my-8"
+            >
+              <p>
+                Are there any limitations on the number of URLs I can shorten?
+              </p>
+              <p class="text-2xl font-semibold">+</p>
+            </div>
+            <div
+              class="flex items-align justify-between border-b border-custom-gray pb-2 my-8"
+            >
+              <p>
+                Can I customize the shortened URLs to reflect my brand or
+                content?
+              </p>
+              <p class="text-2xl font-semibold">+</p>
+            </div>
+            <div
+              class="flex items-align justify-between border-b border-custom-gray pb-2 my-8"
+            >
+              <p>Can I track the performance of my shortened URLs?</p>
+              <p class="text-2xl font-semibold">+</p>
+            </div>
+            <div
+              class="flex items-align justify-between border-b border-custom-gray pb-2 my-8"
+            >
+              <p class="text-left">
+                How secure is the URL shortening service? Are the shortened
+                links protected <br />
+                against spam or malicious activity?
+              </p>
+              <p class="text-2xl font-semibold">+</p>
+            </div>
+            <div
+              class="flex items-align justify-between border-b border-custom-gray pb-2 my-8"
+            >
+              <p>What is a QR code and what can it do?</p>
+              <p class="text-2xl font-semibold">+</p>
+            </div>
+            <div
+              class="flex items-align justify-between border-b border-custom-gray pb-2 my-8"
+            >
+              <p class="text-left">
+                Is there an API available for integrating the URL shortening
+                service into my own <br />
+                applications or websites?
+              </p>
+              <p class="text-2xl font-semibold">+</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- GET STARTED SECTION -->
+      <div class="bg-cover bg-[url('./Assets/backG.jpg')] w-full h-64 mb-10">
+        <div class="mt-24">
+          <p class="text-custom-white text-4xl font-bold">
+            Revolutionizing Link Optimization
+          </p>
+          <button
+            class="text-custom-white bg-custom-blue font-semibold rounded-full py-2 px-8 mt-4"
+          >
+            Get Started
+          </button>
+        </div>
+      </div>
+
+      <!-- FOOTER SECTION -->
+      <div class="mb-10">
+        <div
+          class="grid grid-cols-2 ml-8 md:ml-0 md:mb-0 mb-10 md:ml-o md:grid-cols-5 text-left m-auto"
+        >
+          <div class="col-span-1 mb-8 md:mb-0 mr-10">
+            <img src="./Assets/footerlogo.png" alt="footer" />
+            <div class="flex items-align mt-4 justify-between">
+              <img src="./Assets/twiter.png" alt="twiter" />
+              <img src="./Assets/insta.png" alt="instagram" />
+              <img src="./Assets/linked.png" alt="linkedin" />
+              <img src="./Assets/fb.png" alt="facebook" />
+            </div>
+          </div>
+          <div class="col-span-1 mb-8 md:mb-0">
+            <p class="font-bold">Why Scissor?</p>
+            <p>Scissor 101</p>
+            <p>
+              Integrations & API <br />
+              Pricing
+            </p>
+          </div>
+          <div class="col-span-1 mb-8 md:mb-0">
+            <p class="font-bold">Solutions</p>
+            <p>Social Media</p>
+            <p>Digital Marketing</p>
+            <p>Customer Service</p>
+            <p>For Developers</p>
+          </div>
+          <div class="col-span-1 mb-8 md:mb-0">
+            <p class="font-bold">Products</p>
+            <p>Link Management</p>
+            <p>QR Codes</p>
+            <p>Link-in-bio</p>
+          </div>
+          <div class="col-span-1 mb-8 md:mb-0">
+            <p class="font-bold">Company</p>
+            <p>About Scissor</p>
+            <p>Careers</p>
+            <p>Partners</p>
+            <p>Press</p>
+            <p>Contact</p>
+            <p>Reviews</p>
+          </div>
+        </div>
+        <div
+          class="grid grid-cols-2 ml-8 md:ml-0 md:grid-cols-5 text-left m-auto"
+        >
+          <div class="hidden md:block col-span-1"></div>
+          <div class="col-span-1 mb-8 md:mb-0">
+            <p class="font-bold">Why Scissor?</p>
+            <p>Scissor 101</p>
+            <p>
+              Integrations & API <br />
+              Pricing
+            </p>
+          </div>
+          <div class="col-span-1 mb-8 md:mb-0">
+            <p class="font-bold">Solutions</p>
+            <p>Social Media</p>
+            <p>Digital Marketing</p>
+            <p>Customer Service</p>
+            <p>For Developers</p>
+          </div>
+          <div class="col-span-1 mb-8 md:mb-0">
+            <p class="font-bold">Products</p>
+            <p>Link Management</p>
+            <p>QR Codes</p>
+            <p>Link-in-bio</p>
+          </div>
+          <div class="hidden md:block col-span-1"></div>
+        </div>
+      </div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>

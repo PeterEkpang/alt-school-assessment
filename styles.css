@@ -1,0 +1,24 @@
+@import url('https://fonts.cdnfonts.com/css/gilroy-bold');
+html {
+  scroll-behavior: smooth;
+}
+
+.web {
+    text-align: center;
+    font-family: gilroy;
+    background-color: white;
+  }
+  
+  .main-web {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* font-size: calc(2px + 2vmin); */
+  }
+
+  .navbar-scroll {
+    border-bottom: 1px solid #005AE2;
+  }
